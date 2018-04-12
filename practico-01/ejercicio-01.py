@@ -13,5 +13,5 @@ a = 12
 b = 23
 print("EL maximo entre ",a, " y ",b," es: ",maximo(a,b))
 
-assert maximo (a,b) == a
-assert maximo (a,b) == b
+assert maximo(a,b) == a
+assert maximo(a,b) == b
