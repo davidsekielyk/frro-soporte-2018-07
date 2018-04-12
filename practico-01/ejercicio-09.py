@@ -9,3 +9,6 @@ a = 3
 b = "g"
 
 print("Multiplicamos el caracter",b, a, "veces:", generar_n_caracteres(a, b))
+
+assert generar_n_caracteres(a, b) == "ggg"
+assert generar_n_caracteres(a, b) == "gg"
