@@ -4,8 +4,8 @@ print('Ejercicio 7: Definir una función es_palindromo() que reconoce palíndrom
 
 def es_palindromo(a):
     inv = ""
-    for i in range(len(a)):
-        inv = inv + (a[-(i+1)])
+    for i in a:
+        inv = i + inv
     if inv == a:
         return True
 
@@ -15,3 +15,6 @@ if es_palindromo(a):
     print("La palabra",a,"es palindromo :)")
 else:
     print("La palabra",a,"no es palindromo :(")
+
+assert es_palindromo(a) == True
+assert es_palindromo(a) == False
