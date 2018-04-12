@@ -4,9 +4,12 @@ print("Ejercicio 5: Escribir una función multip() que multiplique respectivamen
 
 def multip(a):
     rdo = 1
-    for i in range(len(a)):
-        rdo = rdo * a[i]
+    for i in a:
+        rdo = rdo * i
     return rdo
 
 a = [1, 2, 3, 4]
 print(multip(a))
+
+assert multip(a)==24
+assert multip(a)==27
